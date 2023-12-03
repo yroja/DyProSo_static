@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head> <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="icon" type="image/ico" href="images/tud_logo.ico">
+    <link rel="mask-icon" href="images/tud_logo.ico">
+
+    <link href=
+                  "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+          rel="stylesheet"/>
+
+    <script src=
+                    "https://code.jquery.com/jquery-3.1.1.min.js">
+    </script>
+
+    <script src=
+                    "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js">
+    </script>
+    <script type="text/javascript" src="javascript/functions.js"></script>
+    <title>DyProSo-2023</title>
+</head>
+<body>
+<div class="ui container">
+    <header > <br>
+        <a href="./">
+            <img style="display : inline;" src="images/TUD.png" height="50" width="180"></a>
+        <h1 style="display : inline; float : right;">DyProSo-2023</h1>
+        <br>
+        <br>
+        <br>
+        <img src="images/output-onlinepngtools.png" id="header_pic"></header>
+    <nav><div class="ui grid">
+        <div class="computer only row">
+            <div class="ui large menu" style="width: 100%;">
+                <a class="item" href="./">
+                    Home
+                </a>
+                <div class="ui dropdown item">
+                    About DyProSo
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item" href="./committee">Committees</a>
+                        <a class="item" href="./prev">Previous DyProSo Conferences</a>
+                    </div>
+                </div>
+                <div class="ui dropdown item">
+                    Programme
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item" href="./topics">Topics</a>
+                        <a class="item" href="./timetable" >Timetable</a>
+                        <a class="item" href="./speakers" >Invited Speakers</a>
+                        <a class="item" href="./excursion" >Excursion</a>
+                    </div>
+                </div>
+                <div class="ui dropdown item">
+                    For Participants
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item" href="./important_dates">Important Dates & Fees</a>
+                        <a class="item" href="./venue">Venue</a>
+                        <a class="item" href="./travel">Accommodation & Travel</a>
+                    </div>
+                </div>
+                <a class="item" href="./tourism" style="text-align: center;">
+                    Tourism
+                </a>
+                <a class="item" href="./sponsor" style="text-align: center;">
+                    Sponsors
+                </a>
+            </div>
+        </div>
+
+        <div class="tablet mobile only row">
+            <div class="column">
+                <div class="ui sidebar vertical menu" id="vert_menu">
+                    <a class="item" href="./index">
+                        Home
+                    </a>
+                    <div class="ui item" id="about" style="cursor:pointer;">
+                        About DyProSo
+                        <i class="dropdown icon"></i>
+                        <div id="submenu0" class="menu">
+                            <a class="item" href="./committee">Committees</a>
+                            <a class="item" href="./prev">Previous DyProSo Conferences</a>
+
+                        </div>
+                    </div>
+                    <div class="item" id="programme" style="cursor:pointer;">
+                        Programme
+                        <i class="dropdown icon"></i>
+                        <div id="submenu1" class="menu">
+                            <a class="item" href="./topics">Topics</a>
+                            <a class="item" href="./timetable" >Timetable</a>
+                            <a class="item" href="./speakers" >Invited Speakers</a>
+                            <a class="item" href="./excursion" >Excursion</a>
+                        </div>
+                    </div>
+                    <div class="item" id="participants" style="cursor:pointer;">
+                        For Participants
+                        <i class="dropdown icon"></i>
+                        <div id="submenu2" class="menu">
+                            <a class="item" href="./important_dates">Important Dates</a>
+                            <a class="item" href="./venue">Venue</a>
+                            <a class="item" href="./travel">Accommodation & Travel</a>
+                        </div>
+                    </div>
+                    <a class="item" href="./tourism">
+                        Tourism
+                    </a>
+                    <a class="item" href="./sponsors">
+                        Sponsors
+                    </a>
+
+                </div>
+
+                <div class="tablet mobile only row">
+                    <div class="column">
+                        <div class="ui right menu" id="fixed_menu1">
+                            <a id="sidebar_menu" class="item mobile-button">
+                                <i class="content icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </nav>
+
+    <div class="ui segment" id="tex">
+        <div class="welcome-text" id="welcome_text">
+            <h2>Welcome</h2>
+            <p style="white-space: pre-line;">Welcome to the 39th International Symposium on Dynamical Properties of Solids – DyProSo-2023.</p>
+
+            <p style="white-space: pre-line;"><strong>DyProSo-2023 will take place between September 25 – 29, 2023 in Dresden, Germany.</strong></p>
+            <p style="white-space: pre-line;">DyProSo is an international biannual research meeting devoted to the research on functional properties of condensed matter that result from elementary excitations, molecular motions, transport processes, and other dynamic phenomena occurring in many body systems. Discussions on experimental evidences and investigations, as well as theoretical models and predictions are of particular relevance at DyProSo-2023.</p>
+            <p style="white-space: pre-line;">A special purpose of this DyProSo Symposium is to trigger the scientific dialogue between young and experienced researchers exploring the working in the field of dynamics of materials.</p>
+            <br>
+            <div id="logos">
+                <img src="images/dresdenConcepts2.png" id="dresden_concepts"></a>
+                <img src="images/TUD.png" id="tud_png"></a>
+        </div>
+        </div>
+        <div class="ui raised segment" id="news_block">
+            <h2>News:</h2>
+            <div class="vertical-menu" id="news_vert">
+                <div class="ui segment" style="width: 97%">
+
+                    <div>
+                    <h4 style="width: 95%">Book of abstracts available for download!</h4>
+                    <div>Please visit Programme/Timetable and download the final version of the abstract book.</div>
+                    <div class="ui feed">
+                        <div class="event">
+                            <div class="content">
+                                <div class="summary">
+                                    <p style="float: right" class="date">25 September 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="ui segment" style="width: 97%">
+
+                    <div>
+                        <h4 style="width: 95%">Excursion schedule released</h4>
+                        <div>The schedule for the whole-time excursion to Helmholtz-Zentrum Dresden-Rossendorf (HZDR) on Friday, 29th September 2023, has been released. Please check the Programme/Excursion subpage.</div>
+                        <div class="ui feed">
+                            <div class="event">
+                                <div class="content">
+                                    <div class="summary">
+                                        <p style="float: right" class="date">11 September 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui segment" style="width: 97%">
+
+                    <div>
+                        <h4 style="width: 95%">Short version of scientific programme released!</h4>
+                        <div>Dear participants, please visit => Programme/Timetable, where, as of now, updated versions of the schedule will be available.</div>
+                        <div class="ui feed">
+                            <div class="event">
+                                <div class="content">
+                                    <div class="summary">
+                                        <p style="float: right" class="date">23 August 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui segment" style="width: 97%">
+
+                    <div>
+                        <h4 style="width: 95%">Abstract submission deadline extended to 15th July!</h4>
+                        <div >The abstract submission deadline has been shifted to 15th July 2023. Please create an account first, then you will be able to download the abstract template and to submit your document(s).</div>
+                        <div class="ui feed">
+                            <div class="event">
+                                <div class="content">
+                                    <div class="summary">
+                                        <p style="float: right" class="date">14 June 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui segment" style="width: 97%">
+
+                    <div>
+                        <h4 style="width: 95%">Registration open!</h4>
+                        <div>The registration routine is unlocked! Please, create an account first, then both registration and abstract submission can be accomplished.</div>
+                        <div class="ui feed">
+                            <div class="event">
+                                <div class="content">
+                                    <div class="summary">
+                                        <p style="float: right" class="date">01 June 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui segment" style="width: 97%">
+
+                    <div>
+                        <h4 style="width: 95%">Abstract submission open now!</h4>
+                        <div>In order to submit an abstract, please create an account, then you will have the opportunity to upload your file.</div>
+                        <div class="ui feed">
+                            <div class="event">
+                                <div class="content">
+                                    <div class="summary">
+                                        <p style="float: right" class="date">02 May 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div><br><br><br>
+        <div style="border-top: 1px solid gray;">
+            <p></p>
+            <a style="color: black">DyProSo-2023</a>
+            <a href="https://tu-dresden.de/?set_language=en" target="_blank" rel="noopener noreferrer"></a>
+            <a style="color: black"></a>
+            <div style="float: right;">
+                <a href="./contact">Contact &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a href="./privacypolicy">Privacy</a>
+            </div>
+        </div></div>
+    <br>
+</div>
+</body>
+</html>

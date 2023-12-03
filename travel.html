@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head> <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css" type="text/css"/>
+  <link rel="icon" type="image/ico" href="images/tud_logo.ico">
+  <link rel="mask-icon" href="images/tud_logo.ico">
+
+  <link href=
+                "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+        rel="stylesheet"/>
+
+  <script src=
+                  "https://code.jquery.com/jquery-3.1.1.min.js">
+  </script>
+
+  <script src=
+                  "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js">
+  </script>
+  <script type="text/javascript" src="javascript/functions.js"></script>
+  <title>Accommodation & Travel</title>
+</head>
+
+<body>
+<div class="ui container">
+  <header > <br>
+    <a href="./">
+      <img style="display : inline;" src="images/TUD.png" height="50" width="180"></a>
+    <h1 style="display : inline; float : right;">DyProSo-2023</h1>
+    <br>
+    <br>
+    <br>
+    <img src="images/output-onlinepngtools.png" id="header_pic"></header>
+  <nav><div class="ui grid">
+    <div class="computer only row">
+      <div class="ui large menu" style="width: 100%;">
+        <a class="item" href="./">
+          Home
+        </a>
+        <div class="ui dropdown item">
+          About DyProSo
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item" href="./committee">Committees</a>
+            <a class="item" href="./prev">Previous DyProSo Conferences</a>
+          </div>
+        </div>
+        <div class="ui dropdown item">
+          Programme
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item" href="./topics">Topics</a>
+            <a class="item" href="./timetable" >Timetable</a>
+            <a class="item" href="./speakers" >Invited Speakers</a>
+            <a class="item" href="./excursion" >Excursion</a>
+          </div>
+        </div>
+        <div class="ui dropdown item">
+          For Participants
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item" href="./important_dates">Important Dates & Fees</a>
+            <a class="item" href="./venue">Venue</a>
+            <a class="item" href="./travel">Accommodation & Travel</a>
+          </div>
+        </div>
+        <a class="item" href="./tourism" style="text-align: center;">
+          Tourism
+        </a>
+        <a class="item" href="./sponsor" style="text-align: center;">
+          Sponsors
+        </a>
+      </div>
+    </div>
+
+    <div class="tablet mobile only row">
+      <div class="column">
+        <div class="ui sidebar vertical menu" id="vert_menu">
+          <a class="item" href="./">
+            Home
+          </a>
+          <div class="ui item" id="about" style="cursor:pointer;">
+            About DyProSo
+            <i class="dropdown icon"></i>
+            <div id="submenu0" class="menu">
+              <a class="item" href="./committee">Committees</a>
+              <a class="item" href="./prev">Previous DyProSo Conferences</a>
+
+            </div>
+          </div>
+          <div class="item" id="programme" style="cursor:pointer;">
+            Programme
+            <i class="dropdown icon"></i>
+            <div id="submenu1" class="menu">
+              <a class="item" href="./topics">Topics</a>
+              <a class="item" href="./timetable" >Timetable</a>
+              <a class="item" href="./speakers" >Invited Speakers</a>
+              <a class="item" href="./excursion" >Excursion</a>
+            </div>
+          </div>
+          <div class="item" id="participants" style="cursor:pointer;">
+            For Participants
+            <i class="dropdown icon"></i>
+            <div id="submenu2" class="menu">
+              <a class="item" href="./important_dates">Important Dates</a>
+              <a class="item" href="./venue">Venue</a>
+              <a class="item" href="./travel">Accommodation & Travel</a>
+            </div>
+          </div>
+          <a class="item" href="./tourism">
+            Tourism
+          </a>
+          <a class="item" href="./sponsors">
+            Sponsors
+          </a>
+
+        </div>
+
+        <div class="tablet mobile only row">
+          <div class="column">
+            <div class="ui right menu" id="fixed_menu1">
+              <a id="sidebar_menu" class="item mobile-button">
+                <i class="content icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </nav>
+
+  <div class="ui segment">
+    <div class="grid_container" style="position:relative;">
+    <div id="travel_text">
+    <h2>Accommodation</h2>
+    <p>The "first come - first serve" concept applies to these offers.</p>
+
+    <div >
+        <p><b style="font-size: 110%" >(1) Hilton</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        </p>
+        <span style="width: 300px; white-space: pre-line">Offer for 30 persons until 07/31/2023&#10;Booking ID: DyProSo&#10;Single-Room with breakfast per night: 165,00 €&#10;Double-Room with breakfast per night: 190,00 €</span>
+        <p>Link to Website: <a href="https://www.hilton.com/en/" target="_blank" rel="noopener noreferrer">here</a></p>
+        <br>
+      </div>
+      <div >
+        <p><b style="font-size: 110%">(2) IBIS</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        </p>
+        <span style="width: 300px; white-space: pre-line">Offer for 30 Persons until 08/24/2023&#10;Booking ID: DyProSo-2023&#10;Single-Room with breakfast per night: 75,00 €&#10;Reservation possible via&#10;Phone: +49 351 48564856&#10;E-Mail: reservierung@ibis-dresden.de</span>
+        <p >Link to Website: <a href="https://all.accor.com/hotel/7514/index.de.shtml" target="_blank" rel="noopener noreferrer">here</a></p>
+        <br>
+      </div>
+      <div >
+        <p><b style="font-size: 110%">(3) NH Dresden Neustadt</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        </p>
+        <span style="width: 300px; white-space: pre-line">Offer of 30 single and double rooms.&#10;Booking ID: MB0003167226&#10;Single-Room with breakfast per night: 120-127€&#10;Double-Room with breakfast per night: 89-99€&#10;Contact person: Stefanie Kostuk&#10;Phone: +49 351 8424-635&#10;E-Mail: groups.nhdresdenneustadt@nh-hotels.com</span>
+        <p >Link to Website: <a href="https://www.nh-hotels.com/de/hotel/nh-dresden-neustadt" target="_blank" rel="noopener noreferrer">here</a></p>
+        <br>
+      </div>
+      <div >
+        <p><b style="font-size: 110%" >(4) NH Dresden am Altmarkt</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        </p>
+        <span style="width: 300px; white-space: pre-line">Offer of 30 single and double rooms.&#10;Booking ID: MB0003167226&#10;Single-Room with breakfast per night: 120-127€&#10;Double-Room with breakfast per night: 89-99€&#10;Contact person: Jasmin Waldmann&#10;Phone: +49 351 50155-692&#10;E-Mail: groups.nhdresdenaltmarkt@nh-hotels.com</span>
+        <p >Link to Website: <a href="https://www.nh-hotels.com/de/hotel/nh-collection-dresden-altmarkt" target="_blank" rel="noopener noreferrer">here</a></p>
+        <br>
+      </div>
+      <div >
+        <p><b style="font-size: 110%" >(5) A&O</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        </p>
+        <span style="width: 300px; white-space: pre-line">Offer for 30  persons until 07/31/2023.&#10;Booking ID: DD1-283742&#10;Single-Room with breakfast per night: 94,77 € - 98,37€.&#10;Double-Room with breakfast per night: 101,88 € - 109,62 €.&#10;Phone: +49 351 4692715900</span>
+        <p >Link to Website: <a href="https://www.aohostels.com/de/" target="_blank" rel="noopener noreferrer">here</a></p>
+        <br>
+      </div>
+      <div >
+        <p><b style="font-size: 110%" >Further Hotels (No Contingent)</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        </p>
+        <span style="width: 300px; white-space: pre-line">Hotel Pullmann Dresden Newa&#10;Motel 1</span>
+        <br>
+      </div>
+    </div>
+
+
+
+    <div id="map_container" class="map_responsive2">
+    <iframe src="https://www.google.com/maps/d/embed?mid=18MyDriw0SE_EWeM49Y8cSX40qmMRgv0&ehbc=2E312F&hl=en" width="620" height="800"></iframe>
+    </div>
+    </div>
+
+
+    <h2>Travel</h2>
+    <p style="display: inline;"><strong>Travel information –</strong> For planning your travel to Dresden have a look at the <a href="https://www.dresden.de/en/tourism/information/arrival-transport-hotel-signage-system.php" target="_blank" rel="noopener noreferrer">“Arrival & Public Transport”</a> site of the web presence of Dresden.</p>
+    <br><br>
+    <p style="color: black">For arrival by train click <a href="./train">here</a>.</p>
+    <p style="color: black">For arrival by plane click <a href="./plane">here</a>.</p><br>
+  </div>
+
+
+    <div><br><br><br>
+      <div style="border-top: 1px solid gray;">
+        <p></p>
+        <a style="color: black">DyProSo-2023</a>
+        <a href="https://tu-dresden.de/?set_language=en" target="_blank" rel="noopener noreferrer"></a>
+        <a style="color: black"></a>
+        <div style="float: right;">
+          <a href="./contact">Contact &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a href="./privacypolicy">Privacy</a>
+        </div>
+      </div></div><br>
+</div>
+
+<script>
+      $(".ui.dropdown").dropdown({transition: 'drop', on: 'hover' });
+    </script>
+<script th:inline="javascript">
+  document.getElementById("text").value += [[${currentHotel.getText()}]];
+</script>
+</body>
+</html>
